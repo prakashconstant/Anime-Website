@@ -1,0 +1,822 @@
+:root {
+
+  --red: #E50914;
+  --black: #000000;
+  --light-color: #181818;
+  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Libre+Baskerville:wght@400;700&family=Nunito:wght@200;300;400;500;600;700;800;1000&display=swap');
+
+
+* {
+
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+
+}
+
+.body {
+  background: url("img/hero_image.jpg") no-repeat;
+  background-position: top;
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  filter: blur(10px);
+  filter: brightness(0.8);
+}
+
+html {
+
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+}
+
+header {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--black);
+  padding: 1rem 6%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  z-index: 10000;
+  box-shadow: var(--box-shadow);
+
+}
+
+header .logo {
+
+  color: #fff;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  line-height: 4.5rem;
+}
+
+header .logo i {
+
+  color: var(--red);
+}
+
+header .navbar a {
+
+  font-size: 1.7rem;
+  padding: .5rem 1.5rem;
+  color: #fff;
+  border-radius: .5rem;
+  text-align: center;
+  line-height: 4.5rem;
+}
+
+
+header .navbar a.active,
+header .navbar a:hover {
+
+  color: #fff;
+  background: var(--red);
+}
+
+header .icons a,
+header .icons i {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.7rem;
+  margin-left: .5rem;
+  text-align: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+header .icons a:hover,
+header .icons i:hover {
+
+  color: var(--red);
+  background: #fff;
+  transform: rotate(360deg);
+}
+
+header .icons #menu-bars {
+
+  display: none;
+}
+
+/* Home Page hero conatiner */
+
+
+
+.hero-container {
+  width: 450px;
+  height: 500px;
+  margin-top: 260px;
+  margin-left: 815px;
+  color: #000000;
+  display: inline-block;
+  justify-content: right;
+  border-spacing: 10px;
+
+
+}
+
+.spotlight {
+  font-size: 2rem;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  color: var(--red);
+  margin-bottom: 6px;
+
+}
+
+.spotlight-heading p {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 7px;
+}
+
+.genre-duration-date {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  font-weight: 600;
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 7px;
+}
+
+.genre-duration-date i {
+  font-size: 15px;
+  margin-right: 2px;
+  margin-top: -10px;
+  margin-bottom: 7px;
+
+}
+
+.genre-duration-date p {
+  margin-right: 40px;
+
+}
+
+.para {
+  font-size: 15px;
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+.spotlight-btn {
+  margin-top: 40px;
+}
+
+
+.watch-now-btn {
+  padding: 13px 35px;
+  border-radius: 25px;
+  background-color: var(--red);
+  color: #fff;
+  font-weight: 500;
+  font-family: 'poppins';
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.details-btn {
+  padding: 13px 35px;
+  border-radius: 25px;
+  background-color: grey;
+  color: #fff;
+  font-family: 'poppins';
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+
+}
+
+.details-btn:hover {
+  background-color: rgb(156, 154, 154);
+}
+
+.watch-now-btn:hover {
+  background-color: #ff000d;
+}
+
+/* naruto shippuden background starts */
+.details-body-image {
+  position: absolute;
+  background-image: url(img/Naruto.gif);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(0.3);
+}
+
+/* naruto shippuden background ends */
+
+/* jjk background starts */
+.jjk-image {
+  position: absolute;
+  background-image: url(img/jjk.gif);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(0.4);
+}
+
+/* jjk background ends */
+
+/* death note background starts */
+.death-note-image {
+  position: absolute;
+  background-image: url(img/death-note1.gif);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(0.7);
+}
+
+/* death note background ends */
+
+/* Attack on Titan starts */
+.attack-on-titan-image {
+  position: absolute;
+  background-image: url(img/aot.webp);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+/* Attack on Titan ends */
+
+
+/* Details Page css */
+.details-canvas {
+  width: 100%;
+  height: 700px;
+  margin-top: 5rem;
+  display: flex;
+  color: #fff;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.details-content {
+  background-color: transparent;
+  width: 70%;
+}
+
+.side-details-content {
+  width: 30%;
+  height: 900px;
+  background-color: #fff9f915;
+}
+
+
+.main-details {
+  background-color: transparent;
+  width: 100%;
+  height: 500px;
+  margin-top: 70px;
+}
+
+.main-details-indise {
+  display: flex;
+}
+
+
+.main-details div {
+  margin-left: 20px;
+}
+
+.main-details img {
+  width: 190px;
+  height: 280px;
+}
+
+.watch2gether a {
+  margin-left: 20px;
+  position: absolute;
+  font-size: 1.6rem;
+  color: #fff;
+  margin-top: -28.5px;
+}
+
+.watch2gether i {
+  position: absolute;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: -30px;
+
+}
+
+.breadcrumbs {
+  display: flex;
+  font-size: 1.5rem;
+  width: auto;
+  height: auto;
+}
+
+.breadcrumbs a,
+p {
+  margin-left: 15px;
+}
+
+.breadcrumbs a {
+  color: #fff;
+}
+
+.breadcrumbs a:hover {
+  color: var(--red);
+}
+
+.breadcrumbs p {
+  color: #d3cfcf;
+  font-family: 'poppins';
+  margin-top: -4.5px;
+
+}
+
+.breadcrumbs p i {
+  font-size: 5px;
+  margin-top: -50px;
+}
+
+.para-edit {
+  margin-top: 40px;
+}
+
+/* Share Section */
+
+.share-block {
+  width: 400px;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: left;
+  align-items: center;
+
+
+}
+
+.share-block a {
+  color: #fff;
+}
+
+.share-block img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  filter: brightness(.7);
+  border: 0.1px solid #fff;
+}
+
+.share-block .share-icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* Details Side Page css */
+.side-details-image {
+  position: absolute;
+  background-color: transparent;
+}
+
+.side-details-insider-content {
+  margin-top: 100px;
+
+}
+
+.side-details-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-details-content-inside {
+  width: 90%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 1.5rem;
+  display: inline;
+  color: #fff;
+}
+
+.side-details-para {
+  line-height: 30px;
+}
+
+.side-details-para p span {
+  font-weight: 600;
+}
+
+.hr {
+  background-color: #fff;
+}
+
+
+.side-details-genres {
+  width: 100%;
+  max-width: 300px;
+  line-height: 31px;
+  margin-top: 13px;
+}
+
+
+.side-details-genres a {
+  padding: 2px 6px;
+  background-color: transparent;
+  border: 1px solid rgb(204, 199, 199);
+  border-radius: 20px;
+  font-family: 'poppins';
+  font-weight: 300;
+  color: rgb(204, 199, 199);
+}
+
+.side-details-genres a:hover {
+  color: var(--red);
+}
+
+.side-details-genres p span {
+  font-weight: 600;
+}
+
+.studio {
+  margin-top: 13px;
+}
+
+.studio p span {
+  font-weight: 600;
+}
+
+.studio a {
+  font-family: 'poppins';
+  font-weight: 400;
+  color: rgb(150, 147, 147);
+}
+
+.studio a:hover {
+  color: var(--red);
+}
+
+.producers {
+  max-width: 310px;
+  margin-top: 13px;
+}
+
+.producers p span {
+  font-weight: 600;
+}
+
+.producers a {
+  font-family: 'poppins';
+  font-weight: 400;
+  color: rgb(150, 147, 147);
+}
+
+.producers a:hover {
+  color: var(--red);
+}
+
+
+
+/*downwards content*/
+.other-content {
+  width: 100%;
+  height: 500px;
+  background-color: transparent;
+  display: flex;
+  margin-top: 130px;
+}
+
+.other-down-content {
+  width: 70%;
+  background-color: transparent;
+}
+
+/*MOre Season*/
+.more-seasons {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  line-height: 60px;
+
+}
+
+.more-seasons h2 {
+  font-size: 25px;
+  font-family: 'poppins';
+  color: var(--red);
+}
+
+.more-seasons-block {
+  display: flex;
+}
+
+.more-seasons .season-box {
+  width: 180px;
+  height: 60px;
+  margin-right: 10px;
+  background-color: black;
+  /*background-image: url(https://img.flawlessfiles.com/_r/300x400/100/82/40/82402f796b7d84d7071ab1e03ff7747a/82402f796b7d84d7071ab1e03ff7747a.jpg);
+  background-position: center;
+  background-size: cover;*/
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2.5px solid transparent;
+}
+
+.more-seasons .season-box:hover {
+  border: 2.5px solid var(--red);
+}
+
+.season-box a {
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'poppins';
+}
+
+.season-box a:hover {
+  color: var(--red);
+}
+
+/*Footer Starts*/
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: #010101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  color: #fff;
+  font-size: large;
+  font-family: "poppins";
+  font-weight: 500;
+}
+/*Footer ends*/
+
+
+
+
+
+
+/* media query 991px */
+
+@media (max-width: 991px) {
+
+  html {
+
+    font-size: 55%;
+  }
+
+  header {
+
+    padding: 1rem 2rem;
+  }
+
+  /* 30%  side details removed  */
+  .side-details-content {
+    display: none; 
+  }
+
+  .side-details-content-inside {
+    display: none;
+  }
+
+  /* 70%  details changes  */
+  .details-content {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .main-details {
+    margin-top: 50px;
+  }
+
+  .main-details div {
+    margin-left: 10px;
+  }
+
+  .main-details-indise {
+    font-size: 40%;
+  }
+}
+
+
+/* media query 768px */
+
+
+@media (max-width: 768px) {
+
+  header .icons #menu-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: var(--red);
+  }
+
+  /* 70%  details image changes  */
+  .main-details img {
+    width: 180px;
+    height: 266.39px;
+  }
+
+  /* 70%  details button changes  */
+
+  .watch-now-btn {
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: var(--red);
+    color: #fff;
+    font-family: 'poppins';
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  .details-btn {
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: grey;
+    color: #fff;
+    font-family: 'poppins';
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+
+  }
+
+
+
+}
+
+@media (max-width: 637px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  .main-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-details-indise {
+    display: inline-block;
+  }
+
+  /* breadcrumbs none  */
+  .breadcrumbs {
+    display: none;
+  }
+
+  .main-details div {
+    margin-left: 0px;
+  }
+
+  .details-content {
+    width: 100%;
+  }
+
+  .watch2gether {
+    display: none;
+  }
+
+  /* image margin-left */
+  .main-image img {
+    margin-left: 10px;
+    border: .01px solid #fff;
+  }
+
+  /* mobile title */
+  .spotlight-heading p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  /* genre duration date */
+  .genre-duration-date {
+    display: none;
+  }
+
+  /* Mobile Watch Now and add to list */
+  .spotlight-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .watch-now-btn {
+    margin-left: 10px;
+    padding: 15px 35px;
+    font-size: 17px;
+  }
+
+  .details-btn {
+    padding: 15px 35px;
+    font-size: 17px;
+  }
+
+  /* Mobile Side 30% content Details Block*/
+  .side-details-content {
+    display: none;
+    width: 100%;
+  }
+
+  /* Mobile para*/
+  .para-edit {
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 20px;
+    justify-content: center;
+  }
+
+  /*Second para removed*/
+  .removedinmob {
+    display: none;
+  }
+
+  /*mobile other downwards objects*/
+  .other-content {
+    margin-top: 130px;
+  }
+
+  /*mobile share Block*/
+  .share-block {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .share-block div {
+    margin-right: 20px;
+  }
+
+  .share-block img {
+    width: 50px;
+    height: 50px;
+
+  }
+  .more-seasons-block .season-box{
+    width: 250px;
+  }
+}
